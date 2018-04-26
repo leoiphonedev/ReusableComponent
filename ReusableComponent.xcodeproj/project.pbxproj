@@ -12,6 +12,10 @@
 		DC0977C92090D65200EC782C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0977C72090D65200EC782C /* Main.storyboard */; };
 		DC0977CB2090D65200EC782C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0977CA2090D65200EC782C /* Assets.xcassets */; };
 		DC0977CE2090D65200EC782C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0977CC2090D65200EC782C /* LaunchScreen.storyboard */; };
+		DC68F6C0209231AA009894EC /* ProfileHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F6BE209231AA009894EC /* ProfileHeaderVC.swift */; };
+		DC68F6C1209231AA009894EC /* ProfileHeaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC68F6BF209231AA009894EC /* ProfileHeaderVC.xib */; };
+		DC68F6C32092340A009894EC /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F6C22092340A009894EC /* ProfileDetailVC.swift */; };
+		DC68F6C52092341B009894EC /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F6C42092341B009894EC /* EditProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		DC0977CA2090D65200EC782C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC0977CD2090D65200EC782C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC0977CF2090D65200EC782C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC68F6BE209231AA009894EC /* ProfileHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderVC.swift; sourceTree = "<group>"; };
+		DC68F6BF209231AA009894EC /* ProfileHeaderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderVC.xib; sourceTree = "<group>"; };
+		DC68F6C22092340A009894EC /* ProfileDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
+		DC68F6C42092341B009894EC /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				DC0977C32090D65200EC782C /* AppDelegate.swift */,
+				DC68F6C42092341B009894EC /* EditProfileVC.swift */,
+				DC68F6C22092340A009894EC /* ProfileDetailVC.swift */,
 				DC0977C52090D65200EC782C /* ViewController.swift */,
+				DC68F6BE209231AA009894EC /* ProfileHeaderVC.swift */,
+				DC68F6BF209231AA009894EC /* ProfileHeaderVC.xib */,
 				DC0977C72090D65200EC782C /* Main.storyboard */,
 				DC0977CA2090D65200EC782C /* Assets.xcassets */,
 				DC0977CC2090D65200EC782C /* LaunchScreen.storyboard */,
@@ -126,6 +138,7 @@
 				DC0977CE2090D65200EC782C /* LaunchScreen.storyboard in Resources */,
 				DC0977CB2090D65200EC782C /* Assets.xcassets in Resources */,
 				DC0977C92090D65200EC782C /* Main.storyboard in Resources */,
+				DC68F6C1209231AA009894EC /* ProfileHeaderVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC68F6C52092341B009894EC /* EditProfileVC.swift in Sources */,
 				DC0977C62090D65200EC782C /* ViewController.swift in Sources */,
+				DC68F6C32092340A009894EC /* ProfileDetailVC.swift in Sources */,
 				DC0977C42090D65200EC782C /* AppDelegate.swift in Sources */,
+				DC68F6C0209231AA009894EC /* ProfileHeaderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
