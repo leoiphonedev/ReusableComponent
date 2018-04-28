@@ -49,9 +49,21 @@
                         <action selector="editProfile:" destination="-1" eventType="touchUpInside" id="4s7-DN-jtC"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-Gf-rgl">
+                    <rect key="frame" x="268" y="30" width="77" height="30"/>
+                    <color key="backgroundColor" red="0.96337508309999997" green="0.97504181680000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="showName">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showName:" destination="-1" eventType="touchUpInside" id="BCL-LR-Kx7"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.97757536170000003" green="0.78956228490000002" blue="0.093355529009999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ymp-Gf-rgl" secondAttribute="trailing" constant="30" id="HnT-RP-no2"/>
+                <constraint firstItem="Ymp-Gf-rgl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="MS3-Vb-WY7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="alb-4A-Rjy" secondAttribute="trailing" constant="10" id="X64-5L-LbD"/>
                 <constraint firstItem="alb-4A-Rjy" firstAttribute="top" secondItem="ZbM-Dp-kKN" secondAttribute="bottom" constant="30" id="aMt-ej-u18"/>
                 <constraint firstItem="ZbM-Dp-kKN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="cbq-Xd-VXg"/>

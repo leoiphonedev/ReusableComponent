@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ProfileDetailVC: UIViewController {
+class ProfileDetailVC: UIViewController, ProfileHeaderVcDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addProfileHeaderTo(vc: self)
         // Do any additional setup after loading the view.
+        let dlg = UIApplication.shared.delegate as! AppDelegate
+        dlg.addProfileHeaderTo(vc: self)
     }
 
     @IBAction func navigateBack() {
@@ -25,10 +26,9 @@ class ProfileDetailVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func addProfileHeaderTo(vc: UIViewController) {
-        let profileHeader = ProfileHeaderVC(nibName: "ProfileHeaderVC", bundle: nil)
-        vc.view.addSubview(profileHeader.view)
-        vc.addChildViewController(profileHeader)
+    
+    func nameOfUser(_ name:String) {
+        print("inside profile detail class == \(name)")
     }
 
     /*

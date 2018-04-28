@@ -10,6 +10,8 @@ import UIKit
 
 class EditProfileVC: UIViewController {
 
+    @IBOutlet weak var txtName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +27,15 @@ class EditProfileVC: UIViewController {
         _ = self.navigationController?.popViewController(animated: true)
     }
 
+    
+    @IBAction func saveNameForUser(_ sender: AnyObject) {
+        if txtName.text?.count != 0{
+            //we will save the name and display it on header view
+           // NotificationCenter.default.addObserver(self, selector: #selector(profileChanged(_ :)), name: Notification.Name("PROFILECHANGED"), object: nil)
+            NotificationCenter.default.post(name: Notification.Name("PROFILECHANGED"), object: nil, userInfo: ["name":txtName.text ?? ""])
+
+        }
+    }
     /*
     // MARK: - Navigation
 

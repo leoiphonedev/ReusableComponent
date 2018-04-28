@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ProfileHeaderVcDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        addProfileHeaderTo(vc: self)
+        let dlg = UIApplication.shared.delegate as! AppDelegate
+        dlg.addProfileHeaderTo(vc: self)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,11 +23,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func addProfileHeaderTo(vc: UIViewController) {
-        let profileHeader = ProfileHeaderVC(nibName: "ProfileHeaderVC", bundle: nil)
-        vc.view.addSubview(profileHeader.view)
-        vc.addChildViewController(profileHeader)
+    func nameOfUser(_ name:String) {
+        print("inside viewcontroller.swift class == \(name)")
     }
+    
 
     @IBAction func navigateToDetailScreen() {
         let detailVc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileDetailVC") as! ProfileDetailVC

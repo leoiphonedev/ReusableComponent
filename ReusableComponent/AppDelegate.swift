@@ -12,10 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       
         return true
     }
 
@@ -41,6 +41,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func addProfileHeaderTo(vc: UIViewController) {
+        let profileHeader = ProfileHeaderVC(nibName: "ProfileHeaderVC", bundle: nil)
+        if let vw  = vc as? ViewController {
+            profileHeader.delegate = vw
+        }
+        
+        if let pfDeatilVC  = vc as? ProfileDetailVC {
+            profileHeader.delegate = pfDeatilVC
+        }
+        vc.view.addSubview(profileHeader.view)
+        vc.addChildViewController(profileHeader)
+    }
+    
+   
 
 }
 

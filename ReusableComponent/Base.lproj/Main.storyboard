@@ -122,14 +122,46 @@
                                     <action selector="navigateBack" destination="fP6-Ql-6aR" eventType="touchUpInside" id="utb-Lx-VWC"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOa-P7-fbH">
+                                <rect key="frame" x="20" y="220" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yuf-t0-SZP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjT-x3-zlh">
+                                <rect key="frame" x="19.5" y="300" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.97757536170000003" green="0.78956228490000002" blue="0.093355529009999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sD6-RF-egf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveNameForUser:" destination="fP6-Ql-6aR" eventType="touchUpInside" id="BGN-fT-sgo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FOa-P7-fbH" firstAttribute="top" secondItem="VFQ-P7-ReF" secondAttribute="top" constant="200" id="24B-8x-KU2"/>
                             <constraint firstItem="xEc-5N-OFw" firstAttribute="leading" secondItem="VFQ-P7-ReF" secondAttribute="leading" constant="10" id="7L7-v2-Clu"/>
+                            <constraint firstItem="VFQ-P7-ReF" firstAttribute="trailing" secondItem="FOa-P7-fbH" secondAttribute="trailing" constant="20" id="DtO-MW-uTI"/>
                             <constraint firstItem="xEc-5N-OFw" firstAttribute="top" secondItem="VFQ-P7-ReF" secondAttribute="top" constant="10" id="O4s-b5-9RE"/>
+                            <constraint firstItem="xjT-x3-zlh" firstAttribute="centerX" secondItem="1xq-y2-Wme" secondAttribute="centerX" id="oXv-Yf-v6u"/>
+                            <constraint firstItem="xjT-x3-zlh" firstAttribute="width" secondItem="FOa-P7-fbH" secondAttribute="width" id="t4u-HA-JFF"/>
+                            <constraint firstItem="xjT-x3-zlh" firstAttribute="top" secondItem="FOa-P7-fbH" secondAttribute="bottom" constant="30" id="vdg-4b-Cgv"/>
+                            <constraint firstItem="FOa-P7-fbH" firstAttribute="leading" secondItem="VFQ-P7-ReF" secondAttribute="leading" constant="20" id="zsK-RQ-Nbc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VFQ-P7-ReF"/>
                     </view>
+                    <connections>
+                        <outlet property="txtName" destination="FOa-P7-fbH" id="kbk-zd-wJz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDJ-Me-rck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
